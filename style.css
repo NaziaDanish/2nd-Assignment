@@ -1,0 +1,229 @@
+/* style.css */
+/* Global styles remain the same */
+
+body {
+    background-image: url('assets/background.png'); /* Replace with the correct path */
+    background-size: cover;        /* Ensures the image covers the full background */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-attachment: fixed;  /* Keeps the image fixed while scrolling */
+    background-position: center;   /* Centers the background image */
+    color: #333;    
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px; /* Add some padding on mobile */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    /* Additional styles for smaller devices */
+    h1, h2 {
+        font-size: 1.5em; /* Make headings smaller */
+    }
+
+    /* Add other responsive adjustments as needed */
+}
+
+
+
+/* Header Styles */
+.header {
+    background-color: #e9edf3; /* Bright blue for a professional look */
+    color: white; /* White text for contrast */
+    padding: 20px;
+    width: 100%; /* Full width */
+    text-align: center; /* Center the text */
+}
+
+/* Image Section Styles */
+.image-section img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block element */
+    margin: 20px 0; /* Spacing */
+}
+
+/* Button Styles */
+button {
+    background-color: #dc0909; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Allow margins */
+    font-size: 16px; /* Font size */
+    margin: 10px 0; /* Vertical spacing */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+button:hover {
+    background-color: #cf5b5b; /* Darker green on hover */
+}
+
+/* Section Styles */
+.introduction, .chambers, .valves, .circulation, .electrical-system, .health-tips {
+    background-color: white; /* White background for sections */
+    margin: 20px auto; /* Center sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Max width for larger screens */
+}
+.leftatrium {
+   color: #eee9e9;
+}
+
+#h1left {
+    color: #eefe10;
+}
+h1 {color: #3d0303;}
+/* Title Styles */
+ h2 {
+    color: #3d0303; /* Blue for headings */
+}
+
+h3 {
+    color: #f9ecec;
+}
+nav {
+    color: #eefe10;
+}
+
+h1 {
+    margin-bottom: 10px; /* Space below */
+}
+
+h2 {
+    margin-top: 20px; /* Space above */
+}
+
+/* List Styles */
+ul {
+    color: ;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* No padding */
+}
+
+li {
+    padding: 10px 0; /* Spacing for list items */
+    border-bottom: 1px solid #e0e0e0; /* Divider line */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove divider from last item */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Less padding on small screens */
+    }
+
+    button {
+        width: 100%; /* Full width buttons */
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    .introduction, .chambers, .valves, .circulation, .electrical-system, .health-tips {
+        width: 100%; /* Full width for sections */
+    }
+}
+
+/* Scroll to Top Button */
+.top-btn {
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    display: none; /* Initially hidden */
+    cursor: pointer; /* Pointer cursor */
+    z-index: 1000; /* On top of other elements */
+}
+
+.top-btn.show {
+    display: block; /* Show button when scrolled down */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #450303;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links li {
+    margin: 5px 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-links {
+        flex-direction: column;
+    }
+    .footer-links li {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 0 5px; /* Further reduce padding on very small screens */
+        font-size: 12px; /* Further adjust font size */
+    }
+
+    /* Ensure images are responsive */
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
